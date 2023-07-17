@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
+    <title>Start Tecnologia</title>
+</head>
+<body>
+    <section id="home" class="home">
+        <header >
+            <div class="header-container" >
+                <a href="index.html" class="header-logo">
+                    <img src="./images/logo-start - copia.png" alt="logo Start">
+                </a>
+    
+    
+                <nav id="nav" class="">
+                    <ul class="navbar" id="links">
+                        <li><a href="#products"   onclick="seleccionar(this)">Productos</a></li>
+                        <li><a href="#correo" onclick="seleccionar(this)">Correo Argentino</a></li>
+                        <li><a href="#service" onclick="seleccionar(this)">Servicio Técnico</a></li>
+                        <!-- <li><a href="#radio" onclick="seleccionar(this)">Radio</a></li> -->
+                        <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                    </ul>
+                </nav>
+            
+                <!-- Iconos del menu responsivo -->
+
+                <div id="icon-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+    
+            </div>
+            
+        </header>
+    </section>
+
+
+
+        <div class="container-slider">
+            <div class="slider" id="slider">
+                
+    
+                <div class="slider__section">
+                    <div class="slider__content">
+                        <div>
+                            <img src="./images/logo-color.jpg" alt="">
+                        </div>
+                        <h2 class="slider__title">Cargador Soul</h2>
+                        <p class="slider__txt">Producto Destacado</p>
+                    </div>
+                    <img src="./images/cargador-soul.png" alt="" class="slider__img">
+                
+                </div>
+    
+                <div class="slider__section">
+                    <div class="slider__content">
+                        <div>
+                            <img src="./images/logo-color.jpg" alt="">
+                        </div>
+                        <h2 class="slider__title">Cargador Portatil</h2>
+                        <p class="slider__txt">Producto Destacado</p>
+                    </div>
+                    <img src="./images/cargador-portati.png" alt="" class="slider__img">
+                </div>
+    
+                <div class="slider__section">
+                    <div class="slider__content">
+                        <div>
+                            <img src="./images/logo-color.jpg" alt="">
+                        </div>
+                        
+                        <h2 class="slider__title">DJ L200 Soul</h2>
+                        <p class="slider__txt">Producto Destacado</p>
+                    </div>
+                    <img src="./images/box.png" alt="" class="slider__img">
+                    
+                </div>
+    
+                <div class="slider__section">
+                    <div class="slider__content">
+                        <div>
+                            <img src="./images/logo-color.jpg" alt="">
+                        </div>
+                        <h2 class="slider__title">Soul tws207</h2>
+                        <p class="slider__txt">Producto Destacado</p>
+                    </div>
+                    <img src="./images/tws-2071.png" alt="" class="slider__img">
+                    
+                </div>
+    
+            </div>
+            <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+            <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+        </div>
+    
+
+    <!-- Seccion Productos -->
+
+    <section id="products">
+        <h3 class="title-section">Productos</h3>
+        <div class="fila">
+            <div class="product">
+                <div class="overlay"></div>
+                <img src="./images/auriculares/auriculares-in-ear-soul-flat-21-removebg-preview.png" alt="">
+                <div class="info">
+                    <h4>Auricular</h4>
+                    <p>Modelo: Flat s350</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="overlay"></div>
+                <img src="./images/auriculares/D_NQ_NP-removebg-preview.png" alt="">
+                <div class="info">
+                    <h4>Auricular</h4>
+                    <p>Modelo: Samsung</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="overlay"></div>
+                <img src="./images/auriculares/box.png" alt="">
+                <div class="info">
+                    <h4>Auricular</h4>
+                    <p>Modelo: DJ L200 Soul</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="overlay"></div>
+                <img src="./images/auriculares/tws-2071-removebg-preview.png" alt="">
+                <div class="info">
+                    <h4>Auricular Bluetooth</h4>
+                    <p>Modelo: tws207</p>
+                </div>
+            </div>
+        
+            <div class="product">
+                <div class="overlay"></div>
+                <img src="./images/cargadores/adactador-de-energia-universal.png" alt="">
+                <div class="info">
+                    <h4>Cargador</h4>
+                    <p>Modelo: Universal</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="overlay"></div>
+                <img src="./images/cargadores/cargador-doble.png" alt="">
+                <div class="info">
+                    <h4>Cargador Soul</h4>
+                    <p>Modelo: Share Duo</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="overlay"></div>
+                <img src="./images/cargadores/cargador-para-auto.png" alt="">
+                <div class="info">
+                    <h4>Cargador Soul</h4>
+                    <p>Modelo: Power Car</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="overlay"></div>
+                <img src="./images/cargadores/cargador-fast-charger.jpg" alt="">
+                <div class="info">
+                    <h4>Cargador Soul</h4>
+                    <p>Modelo: Fast Charge</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Seccion Correo Argentino -->
+
+    <section id="correo">
+        <h3 class="title-section">Correo Argentino</h3>
+
+        <div class="fila">
+
+
+            <div class="description">
+                <span class="icon"><i class="fa-solid fa-bell"></i></span>
+                <h4>Recordatorio</h4>
+                <hr>
+                <P>Podes enviar y recibir todo tipo de paqueteria, compras online, hacer devoluciones, envios FULL y todo servicio PAQ.AR</P>
+                <hr>
+                <p>SOMOS UNIDAD POSTAL OFICCIAL DE  CORREO ARGENTINO</p>
+            </div>
+
+            <div class="description">
+                <span class="icon"><i class="fa-solid fa-truck-ramp-box"></i></span>
+                <h4>Envios</h4>
+                <hr>
+                <p>Debera Presentarse en el local con el paquete y su correspondiente caratula que posee códigos, detalles de peso, etc.</p>
+                <p>Los datos seran generados por la pagina del correo una vez que se completen los datos</p>
+                <hr>
+                <P>NO ACEPTAMOS PAQUETES QUE NO TENGAN CARATULAS!</P>
+            </div>
+            
+            <div class="description">
+                <span class="icon"><i class="fa-solid fa-hand"></i></span>
+                <h4>Atención</h4>
+                <hr>
+                <p>Si realizas compras online y selecionas a correo argentino, tus paquetes pueden llegar a nuestro local START TECNOLOGIA.</p>
+                <p>Nos encontras en la opcion up 2 Barker</p>
+                <hr>
+                <p>PODES REALIZAR DEVOLUCION DE PAQUETERIA</p>
+            </div>
+
+            
+
+        </div>
+        <div class="link-correo">
+            <h3>Para visitar la página de Correo Argentino <a href="http://www.correoargentino.com.ar">Click Aquí</a></h3>
+        </div>
+        
+    </section>
+
+        <!-- Seccion Servicio Técnico -->
+
+    <section id="service" class="reveal">
+        <h3 class="title-section">Servicio Técnico</h3>
+        <div class="fila">
+            <div class="service">
+                <span class="icon"><i class="fa-solid fa-mobile-screen"></i></span>
+                <h4>Celulares y Tablets</h4>
+                <hr>
+                <ul class="service-tag">
+                    <li><p>Ping de carga</p></li>
+                    <li><p>Cambio de modulo</p></li>
+                    <li><p>Optimización</p> </li>
+                    <li> <p>Accesorios</p> </li>
+                </ul>
+            </div>
+            <div class="service">
+                <span class="icon"><i class="fa-solid fa-desktop"></i></span>
+                <h4>Computación</h4>
+                <hr>
+                <ul class="service-tag">
+                    <li> <p>Soporte de Soft/Hardware</p> </li>
+                    <li> <p>Sistemas Operativos</p> </li>
+                    <li> <p>Optimización</p> </li>
+                    <li> <p>Desbloqueo</p> </li>
+                </ul>
+            </div>
+            <div class="service">
+                <span class="icon"><i class="fa-solid fa-print"></i></span>
+                <h4>Impresoras</h4>
+                <hr>
+                <ul class="service-tag">
+                    <li><p>Limpieza de cabezales</p></li>
+                    <li><p>Limpieza de Inyectores</p></li>
+                    <li><p>Mantenimiento</p></li>
+                    <li><p>Reparacion</p></li>
+                </ul>
+            </div>
+            <div class="service">
+                <span class="icon"><i class="fa-solid fa-tv-alt"></i></span>
+                <h4>Tv Smart & Audio</h4>
+                <hr>
+                <ul class="service-tag">
+                    <li><p>Cambio de piezas</p></li>
+                    <li><p>Flex</p></li>
+                    <li><p>Display</p></li>
+                    <li><p>Componentes de audio</p></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="colum">
+        
+            <div class="service">
+                <span class="icon"><i class="fa-sharp fa-solid fa-triangle-exclamation"></i></span>
+                <p>Todos los precios estan sujetos al valor y condicion del dolar, es decir que dentro de los días en lo que los dispositivos esten en reparación pueden sufrir una suba, según la cotización actual del dolar</p>
+            </div>
+            <div class="service">
+                <span class="icon"><i class="fa-sharp fa-solid fa-triangle-exclamation"></i></span>
+                <p>El dispositivo tendrá un plazo de 90 días contando desde el dia que el cliente fue notificado de poder retirarlo.</p>
+        </div>
+        
+        
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="social-info">
+
+            <div class="social">
+                <a href="https://www.facebook.com/starttecnologia.barker"><i class='fa-brands fa-facebook' ></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5492281665402"><i class='fa-brands fa-whatsapp' ></i></a>
+                <a href="https://www.instagram.com/starttecnologia.barker/"><i class='fa-brands fa-instagram' ></i></a>
+            </div>
+
+                <div class="dev">
+                    <p >Powered by <a href="https://www.instagram.com/hessonher/">HessonHer</a> &#169; All Right Reserved.</p>
+                </div>
+
+        </div>
+
+        <div class="colum">
+
+            <div class="direccion-info">
+                <h3>START TECNOLOGIA</h3>
+                <p>Honduras 25, Villa Cacique, Argentina</p>
+                <p></p>
+                <p></p>
+            </div>
+            
+        
+    
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=honduras 25 villa cacique&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">frame body </iframe><a href="https://2yu.co"></a><br><style>.mapouter{position:relative;padding-top:15px;text-align:right;height:250px;width:350px;}</style><a href="https://embedgooglemap.2yu.co"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:350px;}</style></div>
+        </div>
+
+        </div>
+        
+        
+        
+
+        
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+</html>

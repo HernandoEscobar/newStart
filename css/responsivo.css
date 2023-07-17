@@ -1,0 +1,143 @@
+@media (min-width: 500px) {
+    #service .fila {
+        place-self: center;
+    }
+}
+
+@media (min-width: 700px) {
+    #products .fila {
+        grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    }
+
+    #correo .fila{
+        width: 85%;
+        place-self: center;
+    }
+
+    #service .fila{
+    place-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #service .colum  {
+        place-self: center;
+    }
+
+    .contact {
+        place-items: center;
+    }
+    .contact .colum {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    #icon-nav {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+
+    .header-logo {
+        width: 250px;
+    }
+    .container-slider {
+        margin-top: 105px;
+    }
+    .navbar a { 
+        font-size: 0.8rem;
+    }
+    #products {
+        max-width: 1000px;
+    }
+    #products .fila {
+        grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    }
+
+    #correo .fila {
+        max-width: 1000px;
+    }
+    #correo .fila {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-logo {
+        width: 350px;
+    }
+    .container-slider {
+        margin-top: 130px;
+    }
+    .slider__section .slider__content img {
+        display: flex;
+    }
+    .slider__content {
+        top: 40%;
+        left: 20%;
+    }
+    .slider {
+        width: 430%;
+    }
+    .slider img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #service .fila, 
+    #service .colum {
+        max-width: 1000px;
+        grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    }
+    .contact {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .contact .direccion-info h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .navbar a { 
+        font-size: 1rem;
+    }
+
+    .slider__section .slider__content img {
+        width: 330px;
+    }
+    .slider__title {
+        font-size: 2.2rem;
+    }
+    .slider__txt {
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media (min-width: 1700px) {
+    .slider__section .slider__content img {
+        left: 35%;
+    }
+
+    .contact {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    
+}
+
+
+
+
+
+
+
